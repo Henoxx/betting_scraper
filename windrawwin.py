@@ -3,8 +3,6 @@ Scrap major football leagues predictions from
 https://www.windrawwin.com
 Developed by @Henoxx
 """
-
-from pydoc import classname
 from bs4 import BeautifulSoup
 import requests
 
