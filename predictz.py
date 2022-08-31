@@ -25,6 +25,7 @@ class Predictz():
             return str(tabulate(self.table_form, headers="keys"))
         except:
             return "Some Error occured!"
+
     def write_data(self, file_name='data.txt'):
         file_name = file_name
         self.fh = open(file_name, 'w')
