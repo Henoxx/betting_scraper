@@ -1,0 +1,84 @@
+{
+    "2022-09-03": {
+        "epl": {
+            "Aston Villa v Man City": {
+                "Stake": "2",
+                "score": "1-2"
+            },
+            "Brentford v Leeds": {
+                "Stake": "2",
+                "score": "0-2"
+            },
+            "Chelsea v West Ham": {
+                "Stake": "1",
+                "score": "2-0"
+            },
+            "Newcastle v Crystal Palace": {
+                "Stake": "1",
+                "score": "1-0"
+            },
+            "Nottm Forest v Bournemouth": {
+                "Stake": "1",
+                "score": "2-0"
+            },
+            "Tottenham v Fulham": {
+                "Stake": "1",
+                "score": "2-0"
+            },
+            "Wolverhampton v Southampton": {
+                "Stake": "2",
+                "score": "0-1"
+            }
+        },
+        "serie-A": {
+            "AC Milan v Inter Milan": {
+                "Stake": "X",
+                "score": "1-1"
+            },
+            "Lazio v Napoli": {
+                "Stake": "X",
+                "score": "1-1"
+            }
+        },
+        "laliga": {
+            "Real Madrid v Real Betis": {
+                "Stake": "1",
+                "score": "2-0"
+            },
+            "Real Sociedad v Atletico Madrid": {
+                "Stake": "2",
+                "score": "0-1"
+            },
+            "Sevilla v Barcelona": {
+                "Stake": "X",
+                "score": "1-1"
+            }
+        },
+        "bun": {
+            "Bayer Leverkusen v Freiburg": {
+                "Stake": "1",
+                "score": "1-0"
+            },
+            "Eintracht Frankfurt v RB Leipzig": {
+                "Stake": "2",
+                "score": "1-3"
+            },
+            "Union Berlin v Bayern Munich": {
+                "Stake": "2",
+                "score": "0-2"
+            },
+            "VfB Stuttgart v Schalke 04": {
+                "Stake": "2",
+                "score": "0-2"
+            },
+            "VfL Bochum v Werder Bremen": {
+                "Stake": "2",
+                "score": "0-2"
+            },
+            "Wolfsburg v FC Koln": {
+                "Stake": "1",
+                "score": "2-0"
+            }
+        }
+    }
+}
