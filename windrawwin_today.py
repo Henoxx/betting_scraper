@@ -56,7 +56,7 @@ def main():
         except:
             pass
 
-def write_data(data, file_name=f'2022-09-03(wdw).json'):
+def write_data(data, file_name=f'{DATE}.json'):
     file_name = file_name
     data = data
     fh = open(file_name, 'w')
