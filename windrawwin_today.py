@@ -21,7 +21,7 @@ def main():
     soup = BeautifulSoup(res, 'html.parser')
     fixt_data = {}
     league_data = {}
-    league_ids = {'England%20Premier%20League':'epl','Italy%20Serie%20A':'serie-A','Spain%20La%20Liga':'laliga', 'Germany%20Bundesliga':'bun'}
+    league_ids = {'England%20Premier%20League':'premier-league','Italy%20Serie%20A':'serie-A','Spain%20La%20Liga':'la-liga', 'Germany%20Bundesliga':'bundesliga'}
     
     content = soup.find(id='content')
     contentfull = content.find_all(class_='contentfull')[1]
