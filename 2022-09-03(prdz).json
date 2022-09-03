@@ -1,0 +1,366 @@
+{
+    "2022-09-03": {
+        "la-liga": {
+            "Sevilla v Barcelona": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "segunda-division": {
+            "Tenerife v Racing Santander": {
+                "Stake": "1",
+                "score": "1-0"
+            }
+        },
+        "2-bundesliga": {
+            "Hamburg v Karlsruhe": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "serie-c": {
+            "Pergolettese v Piacenza": {
+                "Stake": "X",
+                "score": "2-2"
+            },
+            "Triestina v Pordenone": {
+                "Stake": "1",
+                "score": "2-0"
+            }
+        },
+        "italy-serie-c": {
+            "Pergolettese v Piacenza": {
+                "Stake": "X",
+                "score": "2-2"
+            },
+            "Triestina v Pordenone": {
+                "Stake": "1",
+                "score": "2-0"
+            }
+        },
+        "serie-a": {
+            "Lazio v Napoli": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "ligue-1": {
+            "Nantes v PSG": {
+                "Stake": "2",
+                "score": "0-3"
+            }
+        },
+        "eredivisie": {
+            "Go Ahead Eagles v Feyenoord": {
+                "Stake": "2",
+                "score": "0-3"
+            }
+        },
+        "first-division-a": {
+            "Standard Liege v Oostende": {
+                "Stake": "2",
+                "score": "1-2"
+            }
+        },
+        "1-hnl": {
+            "NK Osijek v HNK Sibenik": {
+                "Stake": "1",
+                "score": "1-0"
+            }
+        },
+        "premier-division": {
+            "Sligo v Drogheda Utd": {
+                "Stake": "1",
+                "score": "2-1"
+            }
+        },
+        "primeira-liga": {
+            "Gil Vicente v FC Porto": {
+                "Stake": "2",
+                "score": "0-1"
+            }
+        },
+        "liga-i": {
+            "Voluntari v Rapid Bucharest": {
+                "Stake": "X",
+                "score": "1-1"
+            }
+        },
+        "super-league": {
+            "FC Zurich v Lugano": {
+                "Stake": "2",
+                "score": "0-3"
+            }
+        },
+        "super-lig": {
+            "Fenerbahce v Kayserispor": {
+                "Stake": "1",
+                "score": "3-0"
+            },
+            "Giresunspor v Konyaspor": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "turkey-super-lig": {
+            "Fenerbahce v Kayserispor": {
+                "Stake": "1",
+                "score": "3-0"
+            },
+            "Giresunspor v Konyaspor": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "liga-profesional": {
+            "Aldosivi v Sarmiento": {
+                "Stake": "X",
+                "score": "0-0"
+            },
+            "Velez Sarsfield v Newells Old Boys": {
+                "Stake": "1",
+                "score": "1-0"
+            },
+            "Racing Club v Argentinos Juniors": {
+                "Stake": "X",
+                "score": "1-1"
+            }
+        },
+        "argentina-liga-profesional": {
+            "Aldosivi v Sarmiento": {
+                "Stake": "X",
+                "score": "0-0"
+            },
+            "Velez Sarsfield v Newells Old Boys": {
+                "Stake": "1",
+                "score": "1-0"
+            },
+            "Racing Club v Argentinos Juniors": {
+                "Stake": "X",
+                "score": "1-1"
+            }
+        },
+        "primera-b": {
+            "Gimnasia Mendoza v Chacarita Juniors": {
+                "Stake": "1",
+                "score": "2-1"
+            },
+            "Villa Dalmine v Agropecuario Argentino": {
+                "Stake": "1",
+                "score": "1-0"
+            },
+            "Atletico Atlanta v CA Estudiantes": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "argentina-primera-b": {
+            "Gimnasia Mendoza v Chacarita Juniors": {
+                "Stake": "1",
+                "score": "2-1"
+            },
+            "Villa Dalmine v Agropecuario Argentino": {
+                "Stake": "1",
+                "score": "1-0"
+            },
+            "Atletico Atlanta v CA Estudiantes": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "primera-division": {
+            "Independiente Petrolero v The Strongest": {
+                "Stake": "2",
+                "score": "0-2"
+            },
+            "Universitario de Vinto v CA Palmaflor": {
+                "Stake": "2",
+                "score": "0-1"
+            }
+        },
+        "bolivia-primera-division": {
+            "Independiente Petrolero v The Strongest": {
+                "Stake": "2",
+                "score": "0-2"
+            },
+            "Universitario de Vinto v CA Palmaflor": {
+                "Stake": "2",
+                "score": "0-1"
+            }
+        },
+        "brazil-serie-a": {
+            "Juventude RS v Avai": {
+                "Stake": "X",
+                "score": "0-0"
+            },
+            "Atletico Paranaense v Fluminense": {
+                "Stake": "X",
+                "score": "2-2"
+            },
+            "Bragantino v Palmeiras": {
+                "Stake": "2",
+                "score": "1-2"
+            }
+        },
+        "serie-b": {
+            "Brusque v Vasco da Gama": {
+                "Stake": "X",
+                "score": "0-0"
+            },
+            "Guarani v Sampaio Correa": {
+                "Stake": "X",
+                "score": "0-0"
+            },
+            "CRB v Sport Recife": {
+                "Stake": "1",
+                "score": "2-1"
+            },
+            "Bahia v Tombense": {
+                "Stake": "1",
+                "score": "2-0"
+            },
+            "Chapecoense v Ponte Preta": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "brazil-serie-b": {
+            "Brusque v Vasco da Gama": {
+                "Stake": "X",
+                "score": "0-0"
+            },
+            "Guarani v Sampaio Correa": {
+                "Stake": "X",
+                "score": "0-0"
+            },
+            "CRB v Sport Recife": {
+                "Stake": "1",
+                "score": "2-1"
+            },
+            "Bahia v Tombense": {
+                "Stake": "1",
+                "score": "2-0"
+            },
+            "Chapecoense v Ponte Preta": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "brazil-serie-c": {
+            "Figueirense v Paysandu": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "serie-d-finals": {
+            "Pouso Alegre v Amazonas": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "ecuador-serie-a": {
+            "Deportivo Cuenca v Independiente Jose Teran": {
+                "Stake": "X",
+                "score": "2-2"
+            },
+            "Guayaquil City v Nueve de Octubre": {
+                "Stake": "1",
+                "score": "1-0"
+            }
+        },
+        "paraguay-primera-division": {
+            "Sol de America v Sportivo Ameliano": {
+                "Stake": "X",
+                "score": "1-1"
+            },
+            "Nacional Asuncion v Tacuary": {
+                "Stake": "1",
+                "score": "1-0"
+            }
+        },
+        "primera": {
+            "Cienciano v Carlos Mannucci": {
+                "Stake": "1",
+                "score": "3-0"
+            }
+        },
+        "uruguay-primera-division": {
+            "Danubio v Liverpool FC": {
+                "Stake": "2",
+                "score": "1-2"
+            },
+            "Defensor v Montevideo Wanderers": {
+                "Stake": "1",
+                "score": "2-0"
+            },
+            "Monagas SC v Guaros de Lara": {
+                "Stake": "1",
+                "score": "2-0"
+            }
+        },
+        "venezuela-primera-division": {
+            "Danubio v Liverpool FC": {
+                "Stake": "2",
+                "score": "1-2"
+            },
+            "Defensor v Montevideo Wanderers": {
+                "Stake": "1",
+                "score": "2-0"
+            },
+            "Monagas SC v Guaros de Lara": {
+                "Stake": "1",
+                "score": "2-0"
+            }
+        },
+        "premier-league": {
+            "Pacific v York United": {
+                "Stake": "1",
+                "score": "3-0"
+            }
+        },
+        "major-league-soccer": {
+            "Minnesota Stars v Dallas": {
+                "Stake": "1",
+                "score": "2-0"
+            },
+            "Columbus v Chicago": {
+                "Stake": "1",
+                "score": "1-0"
+            }
+        },
+        "usa-major-league-soccer": {
+            "Minnesota Stars v Dallas": {
+                "Stake": "1",
+                "score": "2-0"
+            },
+            "Columbus v Chicago": {
+                "Stake": "1",
+                "score": "1-0"
+            }
+        },
+        "la-division": {
+            "Pachuca v Santos Laguna": {
+                "Stake": "1",
+                "score": "1-0"
+            }
+        },
+        "pro-league": {
+            "Al Aqaba v Sahab": {
+                "Stake": "1",
+                "score": "1-0"
+            }
+        },
+        "algeria-ligue-1": {
+            "ES Setif v RC Arba": {
+                "Stake": "1",
+                "score": "3-1"
+            }
+        },
+        "botola-pro": {
+            "Maghrib Fes v Maghrib Tetouan": {
+                "Stake": "1",
+                "score": "2-0"
+            }
+        }
+    }
+}
