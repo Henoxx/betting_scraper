@@ -1,0 +1,190 @@
+{
+    "2022-09-05": {
+        "championship": {
+            "Middlesbrough v Sunderland": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "la-liga": {
+            "Valladolid v Almeria": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "segunda-division": {
+            "Real Oviedo v Levante": {
+                "Stake": "1",
+                "score": "4-1"
+            }
+        },
+        "serie-c": {
+            "Ancona v Siena": {
+                "Stake": "1",
+                "score": "2-1"
+            }
+        },
+        "serie-a": {
+            "Torino v Lecce": {
+                "Stake": "X",
+                "score": "0-0"
+            }
+        },
+        "ligue-2": {
+            "Pau v St Etienne": {
+                "Stake": "2",
+                "score": "0-2"
+            }
+        },
+        "national": {
+            "Le Mans v Red Star": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "eerste-divisie": {
+            "AZ II v FC Dordrecht": {
+                "Stake": "X",
+                "score": "0-0"
+            },
+            "Jong Ajax v Heracles": {
+                "Stake": "1",
+                "score": "3-0"
+            },
+            "Jong PSV v TOP Oss": {
+                "Stake": "X",
+                "score": "1-1"
+            }
+        },
+        "netherlands-eerste-divisie": {
+            "AZ II v FC Dordrecht": {
+                "Stake": "X",
+                "score": "0-0"
+            },
+            "Jong Ajax v Heracles": {
+                "Stake": "1",
+                "score": "3-0"
+            },
+            "Jong PSV v TOP Oss": {
+                "Stake": "X",
+                "score": "1-1"
+            }
+        },
+        "urvalsdeild": {
+            "Breidablik Kopavogur v Valur Reykjavik": {
+                "Stake": "1",
+                "score": "3-0"
+            }
+        },
+        "primeira-liga": {
+            "Boavista v Pacos Ferreira": {
+                "Stake": "X",
+                "score": "0-0"
+            },
+            "Chaves v Rio Ave": {
+                "Stake": "X",
+                "score": "1-1"
+            }
+        },
+        "portugal-primeira-liga": {
+            "Boavista v Pacos Ferreira": {
+                "Stake": "X",
+                "score": "0-0"
+            },
+            "Chaves v Rio Ave": {
+                "Stake": "X",
+                "score": "1-1"
+            }
+        },
+        "liga-i": {
+            "CS Universitatea Craiova v FC Farul Constanta": {
+                "Stake": "X",
+                "score": "2-2"
+            }
+        },
+        "ettan": {
+            "Vanersborgs v Lindome GIF": {
+                "Stake": "1",
+                "score": "2-0"
+            }
+        },
+        "super-lig": {
+            "Galatasaray v Gaziantep BB": {
+                "Stake": "1",
+                "score": "2-0"
+            }
+        },
+        "liga-profesional": {
+            "Defensa Y Justicia v San Lorenzo": {
+                "Stake": "2",
+                "score": "0-2"
+            },
+            "Godoy Cruz v Arsenal Buenos Aires": {
+                "Stake": "1",
+                "score": "2-1"
+            }
+        },
+        "argentina-liga-profesional": {
+            "Defensa Y Justicia v San Lorenzo": {
+                "Stake": "2",
+                "score": "0-2"
+            },
+            "Godoy Cruz v Arsenal Buenos Aires": {
+                "Stake": "1",
+                "score": "2-1"
+            }
+        },
+        "primera-b": {
+            "Deportivo Riestra v San Martin de Tucuman": {
+                "Stake": "X",
+                "score": "2-2"
+            },
+            "Temperley v Ferro Carril Oeste": {
+                "Stake": "X",
+                "score": "1-1"
+            }
+        },
+        "argentina-primera-b": {
+            "Deportivo Riestra v San Martin de Tucuman": {
+                "Stake": "X",
+                "score": "2-2"
+            },
+            "Temperley v Ferro Carril Oeste": {
+                "Stake": "X",
+                "score": "1-1"
+            }
+        },
+        "primera-division": {
+            "Jorge Wilstermann v Royal Pari": {
+                "Stake": "1",
+                "score": "2-0"
+            },
+            "Fenix v Plaza Colonia": {
+                "Stake": "1",
+                "score": "2-0"
+            }
+        },
+        "uruguay-primera-division": {
+            "Jorge Wilstermann v Royal Pari": {
+                "Stake": "1",
+                "score": "2-0"
+            },
+            "Fenix v Plaza Colonia": {
+                "Stake": "1",
+                "score": "2-0"
+            }
+        },
+        "premier-league": {
+            "HFX Wanderers v Cavalry": {
+                "Stake": "X",
+                "score": "0-0"
+            }
+        },
+        "botola-pro": {
+            "FAR Rabat v RSB Berkane": {
+                "Stake": "1",
+                "score": "3-2"
+            }
+        }
+    }
+}
