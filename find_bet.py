@@ -1,12 +1,20 @@
-import json, datetime, csv
+import json, csv
 from scraper import Predictz, WinDrawWin, DATE
-from tabulate import tabulate
 
-wdw_obj = WinDrawWin.get()
-prz_obj = Predictz.get()
-wdw_today = wdw_obj.data[DATE]
-prz_toady = prz_obj.data[DATE]
-# Fix the zulu bet in scraper.py and add it here.
+
+file_names = [f'wdw_{DATE}.json', f'prz_{DATE}.json']
+web_data_list = []
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
 
 def file_handler(file_name):
@@ -15,11 +23,35 @@ def file_handler(file_name):
     fh.close()
     return raw_data
 
+# Fix the zulu bet in scraper.py and add it here.
 # Not like this to load the data
 zul_today = json.loads(file_handler(f'{DATE}(zul).json'))[DATE]
 
-websites_data_list = [wdw_today,prz_toady,zul_today]
+wdw_today, prz_toady = None, None
 
+# iterate through files and get data for analysis
+for file_name in file_names:
+    try:
+        # temporary data for each files.
+        temp_data = json.loads(file_handler(file_name))[DATE]
+        web_data_list.append(temp_data)
+
+    except:
+        print(f'----- {DATE} -----')
+        print('Checking data in local storage.....')
+        print(bcolors.FAIL + '[DATA NOT FOUND]' + bcolors.ENDC)
+        wdw_obj = WinDrawWin.get()
+        prz_obj = Predictz.get()
+        wdw_today = wdw_obj.data[DATE]
+        prz_toady = prz_obj.data[DATE]
+        break
+else:
+    # if data is not from the local storage.
+    if wdw_today == None and prz_toady == None:
+        wdw_today = web_data_list[0]
+        prz_toady = web_data_list[1]
+
+web_data_list = [wdw_today, prz_toady, zul_today]
 stakes_list = []
 data_list = []
 
@@ -37,10 +69,10 @@ def check_zulu(league_name, match):
             if team_name_fragment in zul_match.split(' '):
                 return zul_match
 
-# Analysis done in this function
+# Analysis done in this function (Percentage Calculations)
 def analayze(stakes_list):
     win, draw, lose = 0, 0, 0
-    not_found = []
+    not_found = []  # To calculate average based on the data aquired from number of websites
     for val in stakes_list:
         if val == '1':
             win += 1
@@ -58,14 +90,15 @@ def analayze(stakes_list):
             lose += 0.5
             win += 0.5
         elif val == 'None':
+            # later length of the list is used to know from how many websites the data is found.
             not_found.append(val)
     else:
         try:
             total_data = len(stakes_list) - len(not_found)
+            # calculate percentages
             win = (win/total_data) * 100
             lose = (lose/total_data) * 100
             draw = (draw/total_data) * 100
-            # print(f"Win: {round(win,2)}%, Draw: {round(draw,2)}%, Lose:{round(lose,2)}%")
             return [round(win,2), round(draw,2), round(lose,2)]
         except:
             print('on try')
@@ -77,7 +110,7 @@ def create_csv():
     for league_name in wdw_today.keys():
         matches = list(wdw_today[league_name].keys())  
         for match in matches:
-            for website_data in websites_data_list:
+            for website_data in web_data_list:
                 try:
                     orginal_match = match
                     if website_data == zul_today:
@@ -94,12 +127,12 @@ def create_csv():
             data_list.append(DATE)
             data_list.append(league_name)
             data_list.append(match)
-            for i in stakes_list:
-                data_list.append(i)
+            for stake in stakes_list:
+                data_list.append(stake)
             else:
-                # analysis here.
-                for j in analayze(stakes_list):
-                    data_list.append(j)
+                # analysis results written to data_list here.
+                for analysis in analayze(stakes_list):
+                    data_list.append(analysis)
             
             output_writer.writerow(data_list)
 
@@ -107,14 +140,20 @@ def create_csv():
             stakes_list = []
     else:
         output_data.close()
-        print('Data successfully written.')
+        print('CSV Data successfully written.')
 
 def main():
     ...
 
 
 if __name__ == '__main__':
-    create_csv()
-    wdw_obj.write_data()
-    prz_obj.write_data()
+    try:
+        wdw_obj.write_data()
+        prz_obj.write_data()
+    except:
+        print(f'----- {DATE} -----')
+        print('Checking data in local storage.....')
+        print(bcolors.OKBLUE + '[DATA FOUND!]' + bcolors.ENDC )
+    finally:
+        create_csv()
 

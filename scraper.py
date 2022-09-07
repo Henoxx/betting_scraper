@@ -19,6 +19,19 @@ LINK_WDW = "https://www.windrawwin.com/predictions/today/"
 STAKES = {"Draw": "X", "Away": "2", "Home": "1"}
 STAKES_WDW = {"Draw": "X", "Away Win": "2", "Home Win": "1"}
 
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+
+
 class Predictz():
     def __init__(self, data=None, table_form=None):
         self.data = data
@@ -51,11 +64,12 @@ class Predictz():
 
         # Fetching soup data
         url = LINK_PRZ
-        print('Conecting...')
+        print('Connecting...' + bcolors.WARNING + 'https://www.predictz.com' + bcolors.ENDC)
         res = requests.get(url, headers=HEADERS ,timeout=10).text
         soup = BeautifulSoup(res, 'html.parser')
         content = soup.find(class_='pttable')
-        print('Data found. Analyzing...')
+        print(bcolors.OKBLUE + '[CONNECTED]' + bcolors.ENDC, end='')
+        print('  -->  Analyzing...')
 
         league_title = ''
         league_title_flag = 'flag'
@@ -103,6 +117,7 @@ class Predictz():
             # print('-'*10, league_title_flag + f'{[DATE]}' +'-'*10)
             # print(tabulate(table_form, headers="keys", tablefmt='grid'))
             # print()
+            print(bcolors.OKBLUE + '[SCRAPPED]' + bcolors.ENDC)
             table_form ={league_title: {"Fixtures": fixtures, "Predictions":predictions, "Scores": scores}}
             fixt_data = {}
             fixtures, predictions, scores = [],[],[]
@@ -148,12 +163,13 @@ class WinDrawWin():
 
         # Fetching soup data
         url = LINK_WDW
-        print('Conecting...')
+        print('Connecting...' + bcolors.WARNING + 'https://www.windrawwin.com' + bcolors.ENDC)
         res = requests.get(url, headers=HEADERS, timeout=10).text
         soup = BeautifulSoup(res, 'html.parser')
         content = soup.find(id='content')
         contentfull = content.find_all(class_='contentfull')[1]
-        print('Data found. Analyzing...')
+        print(bcolors.OKBLUE + '[CONNECTED]' + bcolors.ENDC, end='')
+        print(' -->  Analyzing...')
 
         # Fetching datas
         for league in league_ids.keys():
@@ -191,6 +207,8 @@ class WinDrawWin():
                 fixtures, predictions, scores = [],[],[]
             except:
                 pass
+        else:
+            print(bcolors.OKBLUE + '[SCRAPPED]' + bcolors.ENDC)
         
         return cls(data, table_form)
 
