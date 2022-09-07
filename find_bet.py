@@ -2,8 +2,11 @@ import json, datetime, csv
 from scraper import Predictz, WinDrawWin, DATE
 from tabulate import tabulate
 
-wdw_today = WinDrawWin.get().data[DATE]
-prz_toady = Predictz.get().data[DATE]
+wdw_obj = WinDrawWin.get()
+prz_obj = Predictz.get()
+wdw_today = wdw_obj.data[DATE]
+prz_toady = prz_obj.data[DATE]
+# Fix the zulu bet in scraper.py and add it here.
 
 
 def file_handler(file_name):
@@ -11,6 +14,8 @@ def file_handler(file_name):
     raw_data = fh.read()
     fh.close()
     return raw_data
+
+# Not like this to load the data
 zul_today = json.loads(file_handler(f'{DATE}(zul).json'))[DATE]
 
 websites_data_list = [wdw_today,prz_toady,zul_today]
@@ -77,6 +82,8 @@ def create_csv():
                     orginal_match = match
                     if website_data == zul_today:
                         match = check_zulu(league_name, match)
+                        if match == None:
+                            match = orginal_match
 
                     stake = website_data[league_name][match]["Stake"]
                     stakes_list.append(stake)
@@ -108,4 +115,6 @@ def main():
 
 if __name__ == '__main__':
     create_csv()
+    wdw_obj.write_data()
+    prz_obj.write_data()
 
