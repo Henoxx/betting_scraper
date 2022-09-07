@@ -51,9 +51,11 @@ class Predictz():
 
         # Fetching soup data
         url = LINK_PRZ
-        res = requests.get(url, headers=HEADERS).text
+        print('Conecting...')
+        res = requests.get(url, headers=HEADERS ,timeout=10).text
         soup = BeautifulSoup(res, 'html.parser')
         content = soup.find(class_='pttable')
+        print('Data found. Analyzing...')
 
         league_title = ''
         league_title_flag = 'flag'
@@ -146,10 +148,12 @@ class WinDrawWin():
 
         # Fetching soup data
         url = LINK_WDW
-        res = requests.get(url, headers=HEADERS).text
+        print('Conecting...')
+        res = requests.get(url, headers=HEADERS, timeout=10).text
         soup = BeautifulSoup(res, 'html.parser')
         content = soup.find(id='content')
         contentfull = content.find_all(class_='contentfull')[1]
+        print('Data found. Analyzing...')
 
         # Fetching datas
         for league in league_ids.keys():
